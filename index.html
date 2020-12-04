@@ -1,0 +1,452 @@
+<html>
+
+    <head>
+    
+        <title>My Technology - BBC News </title>
+        
+        <style type="text/css">
+            
+            body{
+                
+                padding: 0;
+                margin: 0;
+                font-family: Helvetica, Arial, sans-serif;
+                
+            }
+            
+            #topbar{
+                
+                width: 1000px;
+                height: 40px;
+                margin: 0 auto;
+                                
+            }
+            
+            #bbclogo{
+                
+                margin: 8px 8px 8px 0;
+                float: left;
+                
+            }
+            
+            .topbar-section{
+                
+                float: left;
+                border-left: 2px #CCCCCC solid;
+                height: 100%;
+                padding-right: 10px;
+            }
+            
+            #signin-image{
+                
+                margin: 8px;
+                height: 24px;
+                width: 24px;
+                float: left;
+                
+            }
+            
+            #signin-text{
+                
+                font-weight: bold;
+                position: relative;
+                top: 12px;
+                left: 10px;
+                padding-right: 50px;
+                
+            }
+            
+            #jigglyline{
+                
+                height: 40px;
+                float: left;
+                
+            }
+            
+            #bell{
+                
+                height: 30px;
+                width: 35px;
+                float: left;
+                margin: 4px 5px 0 5px;
+                
+            }
+            
+            .topbar-menu{
+                
+                font-weight: bold;
+                float: left;
+                padding: 13px 15px 0 15px;
+                height: 27px;
+                
+            
+            }
+            
+            #downarrow-image{
+                
+                height: 10px;
+                width: 11px;
+                margin-left: 5px;
+                
+            }
+            
+            #search-box{
+                
+                border: none;
+                margin: 8px 0 8px 10px;
+                height: 24px;
+                background-color: #E4E4E4;
+                font-weight: bold;
+                float: left;
+                
+            }
+            
+            #magnifying-glass{
+                
+                height: 24px;
+                width: 24px;
+                margin: 8px 0 8px 0;
+                
+                
+            }
+            
+            .clear{
+                
+                clear: both;
+                
+            }
+            
+            #menu-bar-container{
+                
+                border-top: 1px solid #CCCCCC;
+                height: 70px;
+                width: 100%;
+                background-color: #BB1919;
+                
+            }
+            
+            #menu-bar{
+                
+                width: 1000px;
+                margin: 0 auto;
+                padding: 8px;
+                
+            }
+            
+            h1{
+                
+                margin: 0;
+                padding: 0;
+                font-size: 300%;
+                color: white;
+                font-weight: normal;
+                float: left;
+            }
+            
+            #local-news{
+                
+                border: 1px #BB4545 solid;
+                float: right;
+                height: 32px;
+                width: 170px;
+                padding: 3px 5px 0 5px;
+                margin: 7px 20px 0  0;
+                
+            }
+            
+            #my-location-image{
+                
+                height: 30px;
+                width: 25px;
+                position: relative;
+                top: -2px;
+                
+            }
+            
+            #local-news a{
+                
+                color: white;
+                text-decoration: none;
+                font-size:20px;
+                position: relative;
+                top:-8px;
+                
+            }
+            
+            #local-news a:hover {
+                
+                text-decoration: underline;
+                
+            }
+            
+            #menu-bar-2-container{
+                
+                background-color: #A91717;
+                width: 100%;
+                height: 40px;
+                
+            }
+            
+            #menu-bar-2{
+                
+                width: 1000px;
+                margin: 0 auto;
+                
+            }
+            
+            #menu-bar-2 a{
+                
+                color: white;
+                float: left;
+                padding: 0 9px;
+                text-decoration: none;
+                border-right: 1px #BB4545 solid;
+                position: relative;
+                top: 12px;
+                
+            }
+            
+            #menu-bar-2 a:hover{
+                
+                text-decoration: underline;
+                
+            }
+            
+            .no-border{
+                
+                border: none !important;
+                
+            }
+            
+            #down-arrow-image{
+                
+                height: 18px;
+                width: 20px;
+                padding-top: 12px;
+                
+            }
+            #page-container{
+                
+                width: 1000px;
+                margin: 0 auto;
+                
+            }
+            
+            h2{
+                
+                font-weight: normal;
+                margin-top: 20px;
+                font-size: 20px;
+                border-bottom: 3px solid #BB1919;
+                width:103px;
+                
+            }
+            
+            h3 a{
+                
+                color: #5A5A5A;
+                font-size: 30px;
+                text-decoration: none;
+                font-weight: bold;
+                            
+            }    
+            
+            h3 a:hover{
+                
+                color: #1167A8;
+                
+            }
+            
+            #article-summary{
+                
+                color: #5A5A5A;
+                width: 250px;
+                font-size: 90%;
+                
+            }
+            
+            #article-summary img{
+                
+                height: 20px;
+                width: 20px;
+                float: left;
+                                                                           
+            }
+            
+            #article-summary a{
+                
+                text-decoration: none;
+                color: #BB1919;
+                border-left: 1px solid #CCCCCC;
+                padding-left: 10px;
+                
+            }
+            
+            #article-summary a:hover{
+                
+                color: #1167A8;
+                
+            }
+            
+            #today-date{
+                
+                padding-right: 10px;
+                
+            }
+            
+            
+        </style>
+     
+    </head>
+
+    <body>
+        
+       <div id="topbar">
+        
+            <img id="bbclogo" src="images/bbclogo.png">
+           
+            <div id="signin-div" class="topbar-section">
+           
+                <img id="signin-image" src="images/signin.jpg">
+                
+                <span id="signin-text">Sign in</span>
+                
+            </div>
+           
+            <div id="bell-div" >
+            
+                <img id="jigglyline" src="images/jiggly.jpg">
+           
+                <img id="bell" src="images/bell.jpg">
+            
+            </div>
+           
+            <div class="topbar-section topbar-menu">
+           
+                News
+                         
+            </div>
+            
+            <div class="topbar-section topbar-menu">
+           
+                Sport
+                         
+            </div>
+           
+            <div class="topbar-section topbar-menu">
+           
+                Weather
+                         
+            </div>
+           
+            <div class="topbar-section topbar-menu">
+           
+                iPlayer
+                         
+            </div>
+           
+            <div class="topbar-section topbar-menu">
+           
+                Tv
+                         
+            </div>
+           
+            <div class="topbar-section topbar-menu">
+           
+                More
+                
+                <img id="downarrow-image" src="images/downarrow.png">
+                         
+            </div>
+           
+            <div class="topbar-section">
+           
+                <input id="search-box" type="text" placeholder="Search"> 
+                
+                <input type="image" id="magnifying-glass" src="images/magnifyingglass.jpg">
+            
+            </div>
+            
+        </div>
+        
+        <div class="clear"></div>
+        
+        <div id="menu-bar-container">
+        
+            <div id="menu-bar">
+            
+                <h1>NEWS</h1>
+                
+                <div id="local-news">
+                
+                    <a href="">Find local news</a>
+                    
+                    <input type="image" id="my-location-image" src="images/mylocation.jpg">
+                
+                </div> 
+            
+            </div>
+            
+        </div>
+        
+        <div class="clear"></div>
+        
+        <div id="menu-bar-2-container">
+        
+            <div id="menu-bar-2">
+            
+                <a href="">Home</a>
+                
+                <a href="">UK</a>
+                
+                <a href="">World</a>
+                
+                <a href="">Business</a>
+                
+                <a href="">Politics</a>
+                
+                <a href="">Tech</a>
+                
+                <a href="">Science</a>
+                
+                <a href="">Health</a>
+                
+                <a href="">Education</a>
+                
+                <a href="">Entertainment & Arts</a>
+                
+                <a href="">Video & Audio</a>
+                
+                <a href="" class="no-border">More</a>
+                
+                <input type="image" id="down-arrow-image" src="images/down-arrow.jpg">
+            
+            </div>
+        
+        </div>
+        
+        <div class="clear"></div>
+        
+        <div id="page-container">
+        
+            <div id="main-article">
+        
+                <h2>Technology</h2>
+                
+                <h3><a href="">Asda bug exposed payment details</a></h3>
+                
+                <div id="article-summary">
+                
+                    <p>Security vulnerabilities that put customers at risk have affected Asda's website for a couple of years, a security expert has revealed.</p>
+                    
+                    <p><img src="images/clock.jpg"><span id="today-date">19 January 2016</span><a href="">Technology</a></p>
+                
+                </div>
+        
+            </div>
+        
+        </div>
+        
+    </body>
+
+</html>
